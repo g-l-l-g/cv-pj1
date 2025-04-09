@@ -1,0 +1,13 @@
+{
+    "save_dir": "./saved_models\\model_1",
+    "hidden_layer_size": 16,
+    "act_func": "ReLU",
+    "lambda_list": null,
+    "initialize_method": "HeInit",
+    "init_lr": 0.5,
+    "step_size": 10,
+    "gamma": 0.1,
+    "batch_size": 64,
+    "num_epochs": 50,
+    "log_iters": 100
+}

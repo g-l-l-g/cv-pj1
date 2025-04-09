@@ -1,0 +1,13 @@
+{
+    "save_dir": ".\\test_train\\model_5",
+    "hidden_layer_size": 8,
+    "act_func": "Logistic",
+    "lambda_list": null,
+    "initialize_method": "HeInit",
+    "init_lr": 0.5,
+    "step_size": 10,
+    "gamma": 0.1,
+    "batch_size": 16,
+    "num_epochs": 2,
+    "log_iters": 200
+}
