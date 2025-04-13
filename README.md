@@ -19,14 +19,14 @@
 │   └── cifar-10-batches-py/       # 原始 CIFAR-10 数据集文件（需自行下载）    
 │  
 ├── mynn/                          # 自定义神经网络核心模块  
-│   └── __init__.py                # 包初始化文件  
-│   └── activation_function.py     # 激活函数实现  
-│   └── initializer.py             # 参数初始化方法
-│   └── lr_scheduler.py            # 学习率调度器
-│   └── metric.py                  # 评估指标（准确率）计算
-│   └── models.py                  # 神经网络模型定义
-│   └── op.py                      # 基础算子实现  
-│   └── optimizer.py               # 优化器（SGD）逻辑  
+│   ├── __init__.py                # 包初始化文件  
+│   ├── activation_function.py     # 激活函数实现  
+│   ├── initializer.py             # 参数初始化方法
+│   ├── lr_scheduler.py            # 学习率调度器
+│   ├── metric.py                  # 评估指标（准确率）计算
+│   ├── models.py                  # 神经网络模型定义
+│   ├── op.py                      # 基础算子实现  
+│   ├── optimizer.py               # 优化器（SGD）逻辑  
 │   └── runner.py                  # 训练流程控制模块  
 │  
 ├── hyperparameter_search.py       # 超参数自动搜索脚本（随机搜索）  
