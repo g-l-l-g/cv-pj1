@@ -44,6 +44,9 @@
 ├── test_train_plot/               # 保存 `train_plot.py` 生成的可视化图表  
 └── test_weight_plot/              # 保存 `weight_plot.py` 生成的权重可视化图像 
 
+🧠 模型说明
+模型定义位于 mynn/ 文件夹中，支持自定义网络结构、激活函数和损失函数等。
+
 ## 📦 安装指南
 ### 环境要求
 - Python 3.8+ （本项目使用3.10）
