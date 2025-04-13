@@ -8,6 +8,8 @@ import mynn as nn
 
 # 加载已训练好的MLP模型
 model = nn.models.MLP()
+
+# 修改以下函数的参数可测试不同权重文件在测试集下的准确率
 model.load_model(
     r'D:\python object\computer_vision\codes_gpu\hyperparameter_search_models\20250406-205637\trial_28\best_model.pkl'
 )
