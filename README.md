@@ -20,7 +20,7 @@
 │  
 ├── mynn/                          # 自定义神经网络核心模块  
 │   ├── __init__.py                # 包初始化文件  
-│   ├── activation_function.py     # 激活函数实现  
+│   ├── activation_function.py     # 激活函数实现
 │   ├── initializer.py             # 参数初始化方法
 │   ├── lr_scheduler.py            # 学习率调度器
 │   ├── metric.py                  # 评估指标（准确率）计算
@@ -44,14 +44,14 @@
 ├── test_train_plot/               # 保存 `train_plot.py` 生成的可视化图表  
 └── test_weight_plot/              # 保存 `weight_plot.py` 生成的权重可视化图像 
 
-🧠 模型说明
+## 🧠 模型说明
 模型定义位于 mynn/ 文件夹中，支持自定义网络结构、激活函数和损失函数等。
 
 ## 📦 安装指南
 ### 环境要求
 - Python 3.8+ （本项目使用3.10）
 - CUDA 12.5 （项目使用 GPU 加速），下载链接 <https://developer.nvidia.com/cuda-12-5-0-download-archive>, 注意需要下载到C盘中，并添加环境变量（如下图所示），否则可能无法正常运行
-  ![Uploading 96778bdccdd8c7055eb26233158397e.png…]()
+     ![环境变量设置](ev_settings.png)
   
 ### 快速安装
 #### 安装依赖
