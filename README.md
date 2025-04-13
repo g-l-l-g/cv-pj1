@@ -14,6 +14,7 @@
 - ​**模型测试**： 通过`test_model.py`在测试已训练模型在测试集上的准确率
 
 ## 📂 项目结构
+```
 .
 ├── dataset/                       # 数据集根目录
 │   ├── cifar-10-batches-py/       # 原始CIFAR-10数据集文件（需自行下载）
@@ -34,7 +35,7 @@
 ├── test_train.py                  # 训练过程测试
 ├── train_plot.py                  # 训练指标可视化
 ├── weight_plot.py                 # 权重可视化工具
-├── testModel.py                   # 模型推理测试
+├── test_model.py                  # 模型准确率测试
 ├── requirements.txt               # 依赖库列表
 ├── LICENSE                        # MIT许可证
 ├── README.md                      # 项目文档
@@ -43,7 +44,7 @@
 ├── test_train/                    # 保存单次训练结果
 ├── test_train_plot/               # 保存训练图表
 └── test_weight_plot/              # 保存权重可视化结果
-
+```
 ## 🧠 模型说明
 模型定义位于 mynn/ 文件夹中，支持自定义网络结构、激活函数和损失函数等。
 
@@ -65,7 +66,7 @@ pip install -r requirements.txt
 ### 超参数搜索
 - 修改搜索范围：在`hyperparameter_search.py`文件中修改字典search_config中各个键的值
 ### 准确率测试
-- 测试不同权重文件：
+- 测试不同权重文件：修改model.load_model（）中地址的值可测试不同权重文件在测试集下的准确率
 ### 可视化
 - 训练过程可视化：运行`train_plot.py`，超参数修改类同"训练模型"部分
 - 权重可视化：运行`weight_plot.py`，需要在该文件的函数visualize_model_params（）中写入正确的权重文件地址（文件类型为.pkl）
