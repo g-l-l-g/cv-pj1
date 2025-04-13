@@ -67,6 +67,7 @@ def model_train(
 
         Args:
             save_dir(str): 训练数据保存的地址
+                - 默认地址为：'.\\saved_models'
 
             hidden_layer_size (int): 隐藏层维度，须满足：
                 - 值范围: ≥1 的整数
@@ -105,16 +106,20 @@ def model_train(
             num_epochs (int): 遍历训练集的次数：
                 - 常规设置: 50~200
 
-            log_iters (int): 训练日志打印频率：
+            log_iters (int): 权重更新所需的迭代次数：
                 - 单位: 迭代次数
-                - 特殊值: 设为0可禁用迭代级日志
+                - 范围: 正整数，且不可设置为0
 
         Returns:
-            None: 训练结果通过控制台输出和模型文件保存
+            test_acc(cp.ndarray), 
+            train_scores(List[cp.ndarray]), 
+            dev_scores(List[cp.ndarray]), 
+            train_loss(List[cp.ndarray]),
+            dev_loss(List[cp.ndarray])
         """
 
     # 数据加载与预处理
-    data_dir = './dataset/cifar-10-batches-py'
+    data_dir = './dataset/cifar-10-batches-py'  # 数据集路径
     X_train, y_train, X_val, y_val, X_test, y_test = load_dataset(data_dir)
     X_train = preprocess(X_train)
     X_val = preprocess(X_val)
